@@ -17,7 +17,7 @@
       <div class="wkheader-content">
         <img :src="cusCompany.versionImg"  v-show="cusCompany.versionImg" alt="" class="wkheader-content-icon">
         <div class="wkheader-content-text" v-show="cusCompany.name">{{cusCompany.name}}</div>
-        <div  class="wkheader-content-prompt" v-show="cusCompany.version">{{cusCompany.version}}</div>
+        <div class="wkheader-content-prompt" :class="versionType=='3'?'wkheader-content-prompt-dis':''" v-show="cusCompany.version">{{cusCompany.version}}</div>
       </div>
     </div>
     <div class="wkheader-two">
@@ -58,6 +58,10 @@ export default {
       }),
     },
     cusStyleType: {
+      type: String,
+      default: '1',
+    },
+    versionType: {
       type: String,
       default: '1',
     },

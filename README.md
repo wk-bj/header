@@ -24,6 +24,7 @@ $ yarn add wkheader
 |cusUserInfo|用户信息|Object|否|{phone: \'\',imgLink: \'\'}|
 |cusCompany|公司信息|Object|否|{logo: \'\',name: \'\',version: \'\',versionImg: \'\',logoutIcon:: \'\'}|
 |cusStyleType|头部展示样式('1'：logo与公司名之间有分隔线，'2'：logo与公司名之间无分隔线,前提条件必须有logo )|Sting|否|'1'|
+|versionType|当前版本('3'：过期版本样式)|Sting|否|'1'|
 
 ### 方法
 
