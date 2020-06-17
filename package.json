@@ -1,6 +1,6 @@
 {
   "name": "wkheader",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Vue.js 头部组件",
   "author": "hongsusu <1042122270@qq.com>",
   "main": "dist/wkheader.js",
