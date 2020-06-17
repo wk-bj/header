@@ -31,6 +31,7 @@ $ yarn add wkheader
 |---|------|-----|
 |editorInfoClick|编辑机构资料|--|
 |logoutClick|退出登录|--|
+|customHomeClick|点击logo|--|
 
 ## 需要的环境
 

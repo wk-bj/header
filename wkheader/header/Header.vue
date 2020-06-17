@@ -5,13 +5,13 @@
     <div class="wkheader-one">
       <div class="wkheader-logocon" v-show="cusCompany.logo&&cusStyleType=='1'">
         <div class="wkheader-logo">
-          <img  class="wkheader-logo-icons" :src="cusCompany.logo" alt="">
+          <img  class="wkheader-logo-icons" :src="cusCompany.logo" alt=""  @click="toHome">
         </div>
         <div class="wkheader-logo-icon"></div>
       </div>
       <div class="wkheader-solt" v-show="cusCompany.logo&&cusStyleType=='2'">
         <div class="wkheader-solt-border">
-          <img :src="cusCompany.logo"  class="wkheader-logo-icons" />
+          <img :src="cusCompany.logo"  class="wkheader-logo-icons"  @click="toHome"/>
         </div>
       </div>
       <div class="wkheader-content">
@@ -68,6 +68,9 @@ export default {
     },
     editorInfo() {
       this.$emit('editorInfoClick');
+    },
+    toHome() {
+      this.$emit('customHomeClick');
     },
   },
 };
